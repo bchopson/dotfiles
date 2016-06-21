@@ -12,8 +12,8 @@ inoremap <Right> <Right>
 nnoremap <silent> <Up> kzz
 nnoremap <silent> <Down> jzz
 
-" jellybeans !!
-colorscheme jellybeans
+" onedark !!
+colorscheme onedark
 
 " remap kk to ESC
 inoremap <silent> kk <ESC>
