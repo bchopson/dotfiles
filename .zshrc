@@ -10,7 +10,7 @@ fi
 ZSH_THEME="robbyrussell"
 
 # zsh plugins
-plugins=(git rails ruby rake rbenv tmux ssh-agent)
+plugins=(git rails ruby rake rbenv tmux ssh-agent python virtualenvwrapper)
 
 # turn off auto-updating, it will be handled by .dotfiles
 DISABLE_AUTO_UPDATE=true
@@ -85,6 +85,14 @@ function last-migration() {
 alias vlmg='vim "$(last-migration)"'
 alias rmlmg='rm "$(last-migration)"'
 
+# pyenv
+if which pyenv > /dev/null;
+  then eval "$(pyenv init -)";
+fi
+
+# pyenv/virutalenvwrapper; prefer pyenv
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYENV="true"
+
 # NVM
 export NVM_DIR=~/.nvm
 
@@ -101,3 +109,9 @@ export TERM='xterm-256color'
 # tabtab source for yo package
 # uninstall by removing these lines or running `tabtab uninstall yo`
 [[ -f /home/vagrant/.nvm/versions/node/v5.10.1/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh ]] && . /home/vagrant/.nvm/versions/node/v5.10.1/lib/node_modules/yo/node_modules/tabtab/.completions/yo.zsh
+
+# Python virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=~
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
