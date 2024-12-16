@@ -1,1 +1,11 @@
-/Users/ben/dotfiles/starship.toml
+[character]
+success_symbol = "[▶](bold green)"
+vicmd_symbol = "[v](bold green)"
+error_symbol = "[▶](bold red)"
+
+[directory]
+style = "bold blue"
+
+[python]
+pyenv_version_name = true
+style = "bold green"
