@@ -1,4 +1,5 @@
 set -g fish_greeting
+fish_vi_key_bindings
 
 # Created by `pipx` on 2023-04-21 02:48:00
 fish_add_path ~/.local/bin
