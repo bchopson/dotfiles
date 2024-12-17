@@ -22,6 +22,13 @@ if test (uname) = Darwin
     end
 end
 
+set -x VISUAL nvim
+set -x EDITOR $VISUAL
+set -x TERM xterm-256color
+set -x FZF_DEFAULT_COMMAND 'rg --files --hidden'
+set -x RIPGREP_CONFIG_PATH "$HOME/.config/rg/ripgreprc"
+set -x ANSIBLE_ROLES_PATH ~/code/work/ansible-roles/
+
 # Start tmux automatically if not already inside a tmux session
 if status is-interactive
     if not set -q TMUX
@@ -32,13 +39,6 @@ if status is-interactive
         end
     end
 end
-
-set -x VISUAL nvim
-set -x EDITOR $VISUAL
-set -x TERM xterm-256color
-set -x FZF_DEFAULT_COMMAND 'rg --files --hidden'
-set -x RIPGREP_CONFIG_PATH "$HOME/.config/rg/ripgreprc"
-set -x ANSIBLE_ROLES_PATH ~/code/work/ansible-roles/
 
 abbr -a gdh 'git diff HEAD^'
 abbr -a gprv 'gh pr view --web'
