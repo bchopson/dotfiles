@@ -1,0 +1,8 @@
+[user]
+	name = Ben Chopson
+	email = bchopson@users.noreply.github.com
+[merge]
+  conflictstyle = diff3
+	tool = nvimdiff
+[advice]
+	detachedHead = false
