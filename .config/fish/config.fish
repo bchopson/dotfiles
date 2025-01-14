@@ -47,6 +47,11 @@ abbr -a opr 'op run --'
 abbr -a oprn 'op run --no-masking --'
 abbr -a myip 'ipconfig getifaddr en0'
 
+function multicd
+    echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
+end
+abbr --add dotdot --regex '^\.\.+$' --function multicd
+
 if test (uname) != Darwin
     alias fd=fdfind
 end
