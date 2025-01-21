@@ -4,3 +4,4 @@ font-size = 20
 background-opacity = 0.8
 keybind = global:ctrl+alt+shift+super+grave_accent=toggle_quick_terminal
 confirm-close-surface = false
+link-url = true
