@@ -15,3 +15,4 @@ tags.temp
 .junk-drawer/
 Session.vim
 .DS_Store
+.aider*

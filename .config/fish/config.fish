@@ -46,6 +46,7 @@ abbr -a tl 'tmuxp load -y'
 abbr -a opr 'op run --'
 abbr -a oprn 'op run --no-masking --'
 abbr -a myip 'ipconfig getifaddr en0'
+abbr -a ipy 'uv run --with ipython ipython'
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
@@ -62,3 +63,5 @@ end
 
 zoxide init fish | source
 starship init fish | source
+env-config-shell fish | source
+COMPLETE=fish jj | source
