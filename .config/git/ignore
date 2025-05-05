@@ -14,5 +14,9 @@ tags.temp
 *.bak
 .junk-drawer/
 Session.vim
+.lazy.lua
 .DS_Store
+# AI
 .aider*
+CLAUDE.md
+.augment-guidelines

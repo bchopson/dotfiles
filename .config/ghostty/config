@@ -1,5 +1,6 @@
 theme = "Kanagawa Wave"
-font-family = JetBrainsMonoNL NFM
+font-family = IosevkaTerm Nerd Font Mono
+font-feature = "-calt, -liga, -dlig"
 font-size = 20
 background-opacity = 0.8
 keybind = global:ctrl+alt+shift+super+grave_accent=toggle_quick_terminal

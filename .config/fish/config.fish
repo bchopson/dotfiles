@@ -7,7 +7,6 @@ fish_add_path ~/.local/bin
 # Rust
 fish_add_path ~/.cargo/bin
 
-
 if test (uname) = Darwin
     # Evaluate Homebrew environment setup
     /opt/homebrew/bin/brew shellenv | source
@@ -17,8 +16,8 @@ if test (uname) = Darwin
     # Setting PATH for Python 3.12
     fish_add_path /Library/Frameworks/Python.framework/Versions/3.12/bin
     # Added by OrbStack: command-line tools and integration
-    if test -f ~/.orbstack/shell/init.fish
-        source ~/.orbstack/shell/init.fish
+    if test -f ~/.orbstack/shell/init2.fish
+        source ~/.orbstack/shell/init2.fish 2>/dev/null || :
     end
 end
 
@@ -41,6 +40,7 @@ if status is-interactive
 end
 
 abbr -a gdh 'git diff HEAD^'
+abbr -a gbv 'git branch -v --sort=-committerdate'
 abbr -a gprv 'gh pr view --web'
 abbr -a tl 'tmuxp load -y'
 abbr -a opr 'op run --'
