@@ -47,6 +47,7 @@ abbr -a opr 'op run --'
 abbr -a oprn 'op run --no-masking --'
 abbr -a myip 'ipconfig getifaddr en0'
 abbr -a ipy 'uv run --with ipython ipython'
+abbr -a mr 'mise run'
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
