@@ -48,6 +48,9 @@ abbr -a oprn 'op run --no-masking --'
 abbr -a myip 'ipconfig getifaddr en0'
 abbr -a ipy 'uv run --with ipython ipython'
 abbr -a mr 'mise run'
+abbr -a tsu 'tailscale up'
+abbr -a tsd 'tailscale down'
+abbr -a uvr 'uv run'
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
