@@ -40,6 +40,7 @@ if status is-interactive
 end
 
 abbr -a gdh 'git diff HEAD^'
+abbr -a gdft 'git -c diff.external=difft diff'
 abbr -a gbv 'git branch -v --sort=-committerdate'
 abbr -a gprv 'gh pr view --web'
 abbr -a tl 'tmuxp load -y'
@@ -49,9 +50,12 @@ abbr -a myip 'ipconfig getifaddr en0'
 abbr -a ipy 'uv run --with ipython ipython'
 abbr -a mr 'mise run'
 abbr -a x 'mise run'
+abbr -a fx 'fnox exec --'
+abbr -a sgs 'fnox exec -- llm cmd'
 abbr -a tsu 'tailscale up'
 abbr -a tsd 'tailscale down'
 abbr -a uvr 'uv run'
+abbr -a lg lazygit
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)

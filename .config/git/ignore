@@ -10,6 +10,7 @@ tags.temp
 .venv
 .mise.toml
 .mise.local.toml
+mise.local.toml
 .nvmrc
 *.bak
 .junk-drawer/
@@ -18,5 +19,4 @@ Session.vim
 .DS_Store
 # AI
 .aider*
-CLAUDE.md
 .augment*
