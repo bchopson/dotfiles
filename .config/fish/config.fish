@@ -8,9 +8,6 @@ fish_add_path ~/.local/bin
 fish_add_path ~/.cargo/bin
 
 if test (uname) = Darwin
-    # Evaluate Homebrew environment setup
-    /opt/homebrew/bin/brew shellenv | source
-
     # Postgres
     fish_add_path /Library/PostgreSQL/17/bin
     # Setting PATH for Python 3.12
@@ -23,7 +20,6 @@ end
 
 set -x VISUAL nvim
 set -x EDITOR $VISUAL
-set -x TERM xterm-256color
 set -x FZF_DEFAULT_COMMAND 'rg --files --hidden'
 set -x RIPGREP_CONFIG_PATH "$HOME/.config/rg/ripgreprc"
 set -x ANSIBLE_ROLES_PATH ~/code/work/ansible-roles/
@@ -56,6 +52,7 @@ abbr -a tsu 'tailscale up'
 abbr -a tsd 'tailscale down'
 abbr -a uvr 'uv run'
 abbr -a lg lazygit
+abbr -a db 'nvim +DBUI'
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)

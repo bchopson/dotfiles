@@ -1,8 +1,9 @@
-theme = "Kanagawa Wave"
+theme = "dark:Kanagawa Wave,light:Builtin Solarized Light"
 font-family = IosevkaTerm Nerd Font Mono
 font-feature = "-calt, -liga, -dlig"
 font-size = 20
 background-opacity = 0.8
+background-blur = true
 keybind = global:ctrl+alt+shift+super+grave_accent=toggle_quick_terminal
 confirm-close-surface = false
 link-url = true

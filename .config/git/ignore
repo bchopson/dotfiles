@@ -20,3 +20,5 @@ Session.vim
 # AI
 .aider*
 .augment*
+.codex*
+.pi*
