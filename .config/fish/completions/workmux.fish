@@ -1,0 +1,1 @@
+workmux completions fish | source

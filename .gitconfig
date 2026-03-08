@@ -1,8 +1,10 @@
+[include]
+  path = ~/.config/delta/themes.gitconfig
 [user]
 	name = Ben Chopson
 	email = bchopson@users.noreply.github.com
 [merge]
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 	tool = nvimdiff
 [advice]
 	detachedHead = false
@@ -11,3 +13,9 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pager]
+  diff = delta
+[delta]
+	navigate = true
+  features = "mellow-barbet"
+  side-by-side = false

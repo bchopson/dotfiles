@@ -53,6 +53,7 @@ abbr -a tsd 'tailscale down'
 abbr -a uvr 'uv run'
 abbr -a lg lazygit
 abbr -a db 'nvim +DBUI'
+abbr -a wma 'workmux add -A'
 
 function multicd
     echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)
